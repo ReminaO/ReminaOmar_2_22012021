@@ -1,0 +1,319 @@
+/* Définition de la nouvelle police*/
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('police/raleway-variablefont_wght-webfont.eot');
+    src: url('police/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+         url('police/raleway-variablefont_wght-webfont.woff') format('woff'),
+         url('police/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+         url('police/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Body*/
+#bloc_page
+{
+    width: 1000px;
+    margin: auto;
+}
+body
+{
+    font-family: ralewaythin, Arial, serif;
+
+}
+
+.gris
+{
+    background-color:#F2F2F2;
+}
+
+
+.blanc
+{
+    background-color:white;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+img
+{
+    border-radius: 15px/5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Header*/
+#logo
+{
+    height:20px;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+nav li
+{
+    padding: 10px;
+    
+}
+#hotel p
+{
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Banniere Recherche*/
+#localisation
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: center;
+    line-height: 30px;
+}
+#filtres
+{
+    display: flex;
+}
+
+#filtres ul
+{
+    display: flex;
+}
+
+#filtres li
+{
+    padding-right: 40px;
+    padding-top: 5px;
+}
+
+/*Première section Hébergements*/
+#hotel
+{
+    display: flex;
+    justify-content: center;
+}
+
+#booking img 
+{
+    height: 100px;
+    width: 200px; 
+}
+#booking
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px/10px;
+    padding: 5px;
+    margin : 10px;
+}
+
+#reservation-1
+{
+    
+    display: flex; 
+    border-radius: 20px/10px;
+    padding: 5px;
+    margin : 10px;
+}
+
+#canebiere
+{
+    border-radius: 20px/10px;
+    margin: 5px;
+    padding-top: 5px;
+   
+}
+
+#mer
+{
+    border-radius: 20px/10px;
+    margin: 5px; 
+    padding-top: 5px;
+   
+}
+
+#port
+{
+    border-radius: 20px/10px;
+    margin: 5px;
+    padding-top: 5px;
+    
+}
+
+#panier
+{
+    border-radius: 20px/10px;
+    margin: 5px;
+    padding-top: 5px;
+   
+}
+
+#mouette
+{
+    border-radius: 20px/10px;
+    margin: 5px;
+    padding-top: 5px;
+    
+}
+
+#amina
+{
+    border-radius: 20px/10px;
+    margin: 5px;
+    padding-top: 5px;
+   
+}
+
+section p
+{
+    font-weight: bold;
+}
+/*Aside*/
+
+aside img
+{
+    margin-right: 5px;
+    height: 65px;
+    width: 95px;
+    
+}
+aside
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px/10px;
+    padding: 5px;
+    margin : 10px;
+}
+
+#matin
+{
+    display: flex;
+    border-radius: 5px/3px;
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+#coeur
+{
+    display: flex;
+    border-radius: 5px/3px;
+    margin: 10px;
+    padding: 5px;
+   
+}
+
+#blanc
+{
+    display: flex;
+    border-radius: 5px/3px;
+    margin: 10px;
+    padding: 5px;
+}
+/*Deuxième section Activités*/
+#activites
+{
+    
+}
+#activities
+{
+    display: flex;
+    justify-content: center;
+
+}
+#activities_bloc
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.long img
+{
+    height:400px;
+    width: 250px;
+  
+}
+.petit img
+{
+    height: 150px;
+    width: 200px;
+}
+#vieux
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px #F2F2F2;
+    border-radius: 20px/10px;
+}
+#pomegues
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px #F2F2F2;
+    border-radius: 20px/10px;
+}
+
+#frioul
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px #F2F2F2;
+    border-radius: 20px/10px;
+}
+
+#calanques
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px #F2F2F2;
+    border-radius: 20px/10px;
+}
+
+#dame
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px #F2F2F2;
+    border-radius: 20px/10px;
+}
+#longchamp
+{
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0px  #F2F2F2;
+    border-radius: 20px/10px;
+}
+
+/* Footer*/
+footer
+{
+    display: flex;
+   justify-content: space-around; 
+}
+footer li
+{
+    padding-bottom: 2px;
+}
