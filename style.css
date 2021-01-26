@@ -1,5 +1,5 @@
 /* Définition de la nouvelle police*/
-@font-face {
+/*@font-face {
     font-family: 'ralewaythin';
     src: url('police/raleway-variablefont_wght-webfont.eot');
     src: url('police/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 /* Body*/
 #bloc_page
@@ -20,8 +20,7 @@
 }
 body
 {
-    font-family: ralewaythin, Arial, serif;
-
+    font-family: 'Raleway', sans-serif;
 }
 
 .gris
@@ -29,28 +28,29 @@ body
     background-color:#F2F2F2;
 }
 
-
-.blanc
-{
-    background-color:white;
-}
-
 li
 {
     list-style-type: none;
 }
 
-img
+a
 {
-    border-radius: 15px/5px;
-
-}
-
-a{
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
+p
+{
+    margin: 0px;
+    font-size: 15px;   
+}
+
+.nom p
+{
+    Font-weight : bold;
+}
+
 /* Header*/
 #logo
 {
@@ -74,12 +74,7 @@ nav li
     padding: 10px;
     
 }
-#hotel p
-{
-    font-size: 10px;
-    padding: 0px;
-    margin: 0px;
-}
+
 
 /* Banniere Recherche*/
 #localisation
@@ -91,6 +86,7 @@ nav li
     text-align: center;
     line-height: 30px;
 }
+
 #filtres
 {
     display: flex;
@@ -116,6 +112,7 @@ nav li
 
 #booking img 
 {
+    object-fit : cover; 
     height: 100px;
     width: 200px; 
 }
@@ -123,7 +120,7 @@ nav li
 {
     display: flex;
     flex-direction: column;
-    border-radius: 20px/10px;
+    border-radius: 10px;
     padding: 5px;
     margin : 10px;
 }
@@ -131,106 +128,55 @@ nav li
 #reservation-1
 {
     
-    display: flex; 
-    border-radius: 20px/10px;
+    display: flex;
+    border-radius: 10px;
     padding: 5px;
     margin : 10px;
 }
 
-#canebiere
+.carte_centrale
 {
-    border-radius: 20px/10px;
-    margin: 5px;
-    padding-top: 5px;
-   
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
 }
 
-#mer
+.carte_centrale img
 {
-    border-radius: 20px/10px;
-    margin: 5px; 
-    padding-top: 5px;
-   
+    border-radius: 10px 10px 0px 0px; 
 }
 
-#port
-{
-    border-radius: 20px/10px;
-    margin: 5px;
-    padding-top: 5px;
-    
-}
-
-#panier
-{
-    border-radius: 20px/10px;
-    margin: 5px;
-    padding-top: 5px;
-   
-}
-
-#mouette
-{
-    border-radius: 20px/10px;
-    margin: 5px;
-    padding-top: 5px;
-    
-}
-
-#amina
-{
-    border-radius: 20px/10px;
-    margin: 5px;
-    padding-top: 5px;
-   
-}
-
-section p
-{
-    font-weight: bold;
-}
 /*Aside*/
 
 aside img
 {
     margin-right: 5px;
-    height: 65px;
-    width: 95px;
-    
+    object-fit : cover;
+    height: 95px;
+    width: 95px;   
 }
 aside
 {
     display: flex;
     flex-direction: column;
-    border-radius: 20px/10px;
+    border-radius: 10px;
     padding: 5px;
     margin : 10px;
 }
 
-#matin
+.coeur
 {
     display: flex;
-    border-radius: 5px/3px;
+    border-radius: 5px 0px 0px 3px;
     margin: 10px;
     padding: 5px;
-    
+    background-color: white;  
 }
-
-#coeur
+.nuit
 {
-    display: flex;
-    border-radius: 5px/3px;
-    margin: 10px;
-    padding: 5px;
-   
-}
-
-#blanc
-{
-    display: flex;
-    border-radius: 5px/3px;
-    margin: 10px;
-    padding: 5px;
+    font-weight: 100;
 }
 /*Deuxième section Activités*/
 #activites
@@ -252,12 +198,14 @@ aside
 
 .long img
 {
+    object-fit : cover; 
     height:400px;
     width: 250px;
   
 }
 .petit img
 {
+    object-fit : cover; 
     height: 150px;
     width: 200px;
 }
