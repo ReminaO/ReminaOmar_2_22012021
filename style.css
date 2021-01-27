@@ -15,7 +15,7 @@
 /* Body*/
 #bloc_page
 {
-    width: 1000px;
+    width: 1100px;
     margin: auto;
 }
 body
@@ -38,17 +38,6 @@ a
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-
-p
-{
-    margin: 0px;
-    font-size: 15px;   
-}
-
-.nom p
-{
-    Font-weight : bold;
 }
 
 /* Header*/
@@ -125,15 +114,13 @@ nav li
     margin : 10px;
 }
 
-#reservation-1
+#reservation_1
 {
     
     display: flex;
     border-radius: 10px;
-    padding: 5px;
     margin : 10px;
 }
-
 .carte_centrale
 {
     border-radius: 10px;
@@ -148,6 +135,11 @@ nav li
     border-radius: 10px 10px 0px 0px; 
 }
 
+#reservation_1 p
+{
+    margin: 0px;
+    font-size: 15px;   
+}
 /*Aside*/
 
 aside img
@@ -156,6 +148,7 @@ aside img
     object-fit : cover;
     height: 95px;
     width: 95px;   
+    border-radius: 10px 0px 0px 10px;
 }
 aside
 {
@@ -166,23 +159,28 @@ aside
     margin : 10px;
 }
 
-.coeur
+.carte_aside
 {
     display: flex;
-    border-radius: 5px 0px 0px 3px;
+    border-radius: 10px 10px 10px 10px;
     margin: 10px;
     padding: 5px;
-    background-color: white;  
+    background-color: white;     
+}
+
+.carte_aside p
+{
+    margin: 0px;
 }
 .nuit
 {
     font-weight: 100;
 }
-/*Deuxième section Activités*/
-#activites
+.nom
 {
-    
+    margin: 5px;
 }
+/*Deuxième section Activités*/
 #activities
 {
     display: flex;
@@ -195,71 +193,78 @@ aside
     flex-direction: column;
     
 }
-
 .long img
 {
     object-fit : cover; 
-    height:400px;
+    height:350px;
     width: 250px;
+    border-radius: 5px 5px 0px 0px;
   
 }
-.petit img
+
+#pomegues img
 {
     object-fit : cover; 
-    height: 150px;
-    width: 200px;
+    height: 210px;
+    width: 240px;
+    border-radius: 5px 5px 0px 0px; 
 }
-#vieux
+ #frioul img
+ {
+    object-fit : cover; 
+    height: 120px;
+    width: 240px;
+    border-radius: 5px 5px 0px 0px;
+ }
+
+ #dame img
+ {
+    object-fit : cover; 
+    height: 140px;
+    width: 240px;
+    border-radius: 5px 5px 0px 0px;
+ }
+
+#longchamp img
 {
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px #F2F2F2;
-    border-radius: 20px/10px;
+    object-fit : cover; 
+    height: 190px;
+    width: 240px;
+    border-radius: 5px 5px 0px 0px;
 }
-#pomegues
+#longchamp
 {
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px #F2F2F2;
-    border-radius: 20px/10px;
+    margin-top: 30px;
 }
 
 #frioul
 {
+    margin-top: 30px;
+}
+.carte_activites
+{
     margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px #F2F2F2;
-    border-radius: 20px/10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;    
 }
 
-#calanques
+#activities p
 {
     margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px #F2F2F2;
-    border-radius: 20px/10px;
+    font-size: 15px;
+}
+#activities_bloc
+{
+    margin: 30px;
 }
 
-#dame
-{
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px #F2F2F2;
-    border-radius: 20px/10px;
-}
-#longchamp
-{
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 0px  #F2F2F2;
-    border-radius: 20px/10px;
-}
 
 /* Footer*/
 footer
 {
     display: flex;
-   justify-content: space-around; 
+    justify-content: space-around; 
+    margin: auto:
 }
 footer li
 {
