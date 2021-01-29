@@ -40,6 +40,16 @@ a
     font-weight: bold;
 }
 
+.etoile_grise
+{
+    color:#F2F2F2;
+}
+
+.etoile_bleue
+{
+    color: #0065FC;
+}
+
 /* Header*/
 #logo
 {
@@ -60,22 +70,59 @@ nav ul
 }
 nav li
 {
-    padding: 10px;
+    padding: 20px;
     
 }
 
+nav a:hover
+{
+    color:#0065FC;
+    border-top: 2px #0065FC solid;
+    padding-top: 20px;
+}
+
+span
+{
+    color: #0065FC;
+}
 
 /* Banniere Recherche*/
 #localisation
 {
     display: inline-block;
-    height: 30px;
+    height: 27px;
     width: 30px;
     border-radius: 5px 0px 0px 5px;
     text-align: center;
     line-height: 30px;
+    padding-top: 10px;
 }
 
+i
+{
+    color: black;
+}
+
+#research
+{
+    display: flex;
+    margin: 0px;
+}
+#maRecherche
+{
+    border: 1px solid #F2F2F2;
+    margin: 0px;
+    padding: 10px;
+}
+button
+{
+    background-color: #0065FC;
+    color: white;
+    border: 1px #0065FC solid;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
 #filtres
 {
     display: flex;
@@ -86,12 +133,59 @@ nav li
     display: flex;
 }
 
-#filtres li
+ul i
 {
-    padding-right: 40px;
-    padding-top: 5px;
+    margin: 0px;
 }
 
+#filtres li
+{
+    margin-right: 40px;
+    margin-left: -40px;
+    padding: 10px;
+    padding-left: 55px;
+    border: 1px solid #F2F2F2;
+    border-left: 0px;
+    border-radius: 50px 50px;
+    font-weight: 700;
+}
+
+.fa-money-bill-wave
+{
+    
+    padding: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px 50px;
+    
+}
+.fa-child
+{
+    padding: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px 50px;
+    
+}
+.fa-heart
+{
+    padding: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px 50px;
+   
+}
+.fa-dog
+{
+    padding: 10px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px 50px;
+}
 /*Première section Hébergements*/
 #hotel
 {
@@ -129,7 +223,19 @@ nav li
     background-color: white;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
 }
+#centrale_mer
+{
+    margin-top: 10px;
+}
 
+#centrale_panier
+{ 
+    margin-top: 10px;
+}
+#centrale_amina
+{ 
+    margin-top: 10px;
+}
 .carte_centrale img
 {
     border-radius: 10px 10px 0px 0px; 
@@ -139,6 +245,10 @@ nav li
 {
     margin: 0px;
     font-size: 15px;   
+}
+section h2 
+{
+    margin-left: 20px;
 }
 /*Aside*/
 
@@ -172,12 +282,16 @@ aside
 {
     margin: 0px;
 }
+
 .nuit
 {
     font-weight: 100;
 }
-.nom
+.aside_nom
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 5px;
 }
 /*Deuxième section Activités*/
@@ -191,6 +305,7 @@ aside
 {
     display: flex;
     flex-direction: column;
+    margin: 30px;
     
 }
 .long img
@@ -250,12 +365,8 @@ aside
 
 #activities p
 {
-    margin: 10px;
     font-size: 15px;
-}
-#activities_bloc
-{
-    margin: 30px;
+    margin: 10px;
 }
 
 
@@ -264,9 +375,15 @@ footer
 {
     display: flex;
     justify-content: space-around; 
-    margin: auto:
+    margin: auto;
+}
+
+h5
+{
+    font-weight: 700;
 }
 footer li
 {
     padding-bottom: 2px;
+    font-weight: 300;
 }
