@@ -1,17 +1,3 @@
-/* Définition de la nouvelle police*/
-/*@font-face {
-    font-family: 'ralewaythin';
-    src: url('police/raleway-variablefont_wght-webfont.eot');
-    src: url('police/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('police/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('police/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('police/raleway-variablefont_wght-webfont.ttf') format('truetype'),
-         url('police/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
-
 /* Body*/
 #bloc_page
 {
@@ -108,12 +94,14 @@ i
     display: flex;
     margin: 0px;
 }
+
 #maRecherche
 {
     border: 1px solid #F2F2F2;
     margin: 0px;
     padding: 10px;
 }
+
 button
 {
     background-color: #0065FC;
@@ -126,6 +114,7 @@ button
 #filtres
 {
     display: flex;
+    align-items: center;
 }
 
 #filtres ul
@@ -142,7 +131,7 @@ ul i
 {
     margin-right: 40px;
     margin-left: -40px;
-    padding: 10px;
+    padding: 15px;
     padding-left: 55px;
     border: 1px solid #F2F2F2;
     border-left: 0px;
@@ -150,42 +139,74 @@ ul i
     font-weight: 700;
 }
 
+#filtres a:hover
+{
+    color:  #0065FC;
+}
+
 .fa-money-bill-wave
 {
     
-    padding: 10px;
+    padding: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     border-radius: 50px 50px;
     
 }
+
 .fa-child
 {
-    padding: 10px;
+    padding: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     border-radius: 50px 50px;
     
 }
+
 .fa-heart
 {
-    padding: 10px;
+    padding: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     border-radius: 50px 50px;
    
 }
+
 .fa-dog
 {
-    padding: 10px;
+    padding: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     border-radius: 50px 50px;
+    
 }
+
+#recherche_info
+{
+    display: flex;
+    align-items: center;
+}
+
+.fa-info
+{
+    display: inline-block;
+    text-align: center;
+    padding : 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    font-size: 10px;
+    color: #0065FC;
+
+}
+#recherche_info p
+{
+    margin-left: 10px;
+}
+
 /*Première section Hébergements*/
 #hotel
 {
@@ -196,8 +217,8 @@ ul i
 #booking img 
 {
     object-fit : cover; 
-    height: 100px;
-    width: 200px; 
+    height: 90px;
+    width: 190px; 
 }
 #booking
 {
@@ -215,6 +236,25 @@ ul i
     border-radius: 10px;
     margin : 10px;
 }
+
+#partie_1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#partie_2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#partie_3
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .carte_centrale
 {
     border-radius: 10px;
@@ -223,19 +263,7 @@ ul i
     background-color: white;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
 }
-#centrale_mer
-{
-    margin-top: 10px;
-}
 
-#centrale_panier
-{ 
-    margin-top: 10px;
-}
-#centrale_amina
-{ 
-    margin-top: 10px;
-}
 .carte_centrale img
 {
     border-radius: 10px 10px 0px 0px; 
@@ -246,26 +274,41 @@ ul i
     margin: 0px;
     font-size: 15px;   
 }
+
 section h2 
 {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 /*Aside*/
+
+#aside_logo
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#aside_logo h2
+{
+    margin-left: 0px;
+    padding-left: 0px;
+}
 
 aside img
 {
     margin-right: 5px;
     object-fit : cover;
-    height: 95px;
-    width: 95px;   
+    height: 85px;
+    width: 85px;   
     border-radius: 10px 0px 0px 10px;
 }
+
 aside
 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    padding: 5px;
+    padding: 15px;
     margin : 10px;
 }
 
@@ -275,7 +318,8 @@ aside
     border-radius: 10px 10px 10px 10px;
     margin: 10px;
     padding: 5px;
-    background-color: white;     
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);     
 }
 
 .carte_aside p
@@ -287,6 +331,7 @@ aside
 {
     font-weight: 100;
 }
+
 .aside_nom
 {
     display: flex;
@@ -294,6 +339,7 @@ aside
     justify-content: space-between;
     margin: 5px;
 }
+
 /*Deuxième section Activités*/
 #activities
 {
@@ -301,20 +347,30 @@ aside
     justify-content: center;
 
 }
+
 #activities_bloc
 {
     display: flex;
     flex-direction: column;
     margin: 30px;
-    
 }
+
+.long
+{
+    height: 440px;
+}
+
 .long img
 {
     object-fit : cover; 
-    height:350px;
-    width: 250px;
+    height:400px;
+    width: 270px;
     border-radius: 5px 5px 0px 0px;
-  
+}
+
+#pomegues
+{
+    height: 250px;
 }
 
 #pomegues img
@@ -324,6 +380,13 @@ aside
     width: 240px;
     border-radius: 5px 5px 0px 0px; 
 }
+
+#frioul
+{
+    margin-top: 30px;
+    height: 160px;
+}
+
  #frioul img
  {
     object-fit : cover; 
@@ -331,6 +394,11 @@ aside
     width: 240px;
     border-radius: 5px 5px 0px 0px;
  }
+
+ #dame
+{
+    height: 180px;
+}
 
  #dame img
  {
@@ -340,6 +408,12 @@ aside
     border-radius: 5px 5px 0px 0px;
  }
 
+ #longchamp
+{
+    margin-top: 30px;
+    height: 230px;
+}
+
 #longchamp img
 {
     object-fit : cover; 
@@ -347,15 +421,7 @@ aside
     width: 240px;
     border-radius: 5px 5px 0px 0px;
 }
-#longchamp
-{
-    margin-top: 30px;
-}
 
-#frioul
-{
-    margin-top: 30px;
-}
 .carte_activites
 {
     margin: 10px;
@@ -374,16 +440,24 @@ aside
 footer
 {
     display: flex;
-    justify-content: space-around; 
-    margin: auto;
+    justify-content: space-around;
+    
 }
 
-h5
+footer h4
 {
     font-weight: 700;
 }
+
 footer li
 {
-    padding-bottom: 2px;
-    font-weight: 300;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer ul
+{
+    margin-left: 0px;
+    padding-left: 0px;
 }

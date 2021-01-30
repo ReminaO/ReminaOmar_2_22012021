@@ -19,8 +19,8 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Hébergements</a></li>
-                            <li><a href="#">Activités</a></li>
+                            <li><a href="#booking">Hébergements</a></li>
+                            <li><a href="#activites">Activités</a></li>
                             <li><a href="#"><span>S'inscrire<span></a></li>
                         </ul>   
                     </nav>
@@ -43,13 +43,16 @@
                             <h4>Filtres</h4>
                         </div>
                     <ul>
-                        <i class="fas fa-money-bill-wave"></i><li>Economique</li>
-                        <i class="fas fa-child"></i><li>Familial</li>
-                        <i class="fas fa-heart"></i><li>Romantique</li>
-                        <i class="fas fa-dog"></i><li>Animaux autorisés</li>
+                        <i class="fas fa-money-bill-wave"></i><li><a href="#">Economique</a></li>
+                        <i class="fas fa-child"></i><li><a href="#">Familial</a></li>
+                        <i class="fas fa-heart"></i><li><a href="#">Romantique</a></li>
+                        <i class="fas fa-dog"></i><li><a href="#">Animaux autorisés</a></li>
                     </ul>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div id="recherche_info">    
+                    <i class="fas fa-info"></i> 
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </section>  
             <!-- Première section Hébergements-->
             <section id="hotel">
@@ -63,7 +66,7 @@
                                 <p class="nuit">Nuit à partir de 25€</p></a>
                                 <div><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_grise"></i></div>
                             </div>
-                            <div id="centrale_mer" class="carte_centrale" >
+                            <div class="carte_centrale" >
                                 <a href="#"><img src="images/hebergements/4_small/mer.jpg" alt="Hôtel de la mer"/>
                                 <p>Hôtel de la mer</p>
                                 <p class="nuit">Nuit à partir de 46€</p></a>
@@ -77,7 +80,7 @@
                                 <p class="nuit">Nuit à partir de 52€</p></a>
                                 <div><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i></div>
                             </div>
-                            <div id="centrale_panier" class="carte_centrale" >
+                            <div class="carte_centrale" >
                                 <a href="#"><img src="images/hebergements/4_small/panier.jpg" alt="Auberge le panier"/>
                                 <p>Auberge Le Panier</p>
                                 <p class="nuit">Nuit à partir de 23€</p></a>
@@ -91,7 +94,7 @@
                                 <p class="nuit">Nuit à partir de 76€</p></a>
                                 <div><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_bleue"></i><i class="fas fa-star etoile_grise"></i></div>
                             </div>
-                            <div id="centrale_amina" class="carte_centrale">
+                            <div class="carte_centrale">
                                 <a href="#"><img src="images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina"/>
                                 <p>Hôtel chez Amina</p>
                                 <p class="nuit">Nuit à partir de 96€</p></a>
@@ -105,7 +108,9 @@
                 </div> 
                 <!-- Section Aside -->      
                 <aside class="gris">
-                    <h2>Les plus populaires</h2>
+                    <div id="aside_logo">
+                    <h2>Les plus populaires</h2><i class="fas fa-chart-line"></i>
+                    </div>
                     <div class="carte_aside">
                         <div>
                             <a href="#"><img src="images/hebergements/4_small/matin.jpg" alt="Hôtel le soleil du matin"/></a>
@@ -160,8 +165,8 @@
                             <a href="#"><img src="images/activites/2_large/calanques.jpg" alt="Parc National des Calanques">
                             <p>Parc National des Calanques</p></a>
                         </div>
-                        <div id="dame" class="petit">
-                            <div class="carte_activites">
+                        <div class="petit">
+                            <div id="dame" class="carte_activites">
                                 <a href="#"><img src="images/activites/4_small/dame.jpg" alt="Notre-Dame-de-la-Garde">
                                 <p>Notre-Dame-de-la-Garde</p></a>
                             </div>
@@ -179,23 +184,23 @@
                 <div id="about">
                     <h4>A propos</h4>
                     <ul>
-                        <li><a href="#">Fonctionnement du site</a></li>
-                        <li><a href="#">Conditions générales de vente</a></li>
-                        <li><a href="#">Données et confidentialité</a></li>
+                        <a href="#"><li>Fonctionnement du site</li></a>
+                        <a href="#"><li>Conditions générales de vente</li></a>
+                        <a href="#"><li>Données et confidentialité</li></a>
                     </ul>
                 </div>
                 <div id="hebergement">
                     <h4>Nos hébergements</h4>
                     <ul>
-                        <li><a href="#">Charte qualité</a></li>
-                        <li><a href="#">Soumettre votre hotel</a></li>
+                        <a href="#"><li>Charte qualité</li></a>
+                        <a href="#"><li>Soumettre votre hotel</li></a>
                     </ul>
                 </div>
                 <div id="assistance">
                     <h4>Assistance</h4>
                     <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
+                        <a href="#"><li>Centre d'aide</li></a>
+                        <a href="#"><li>Nous contacter</li></a>
                     </ul>    
                 </div>
 
