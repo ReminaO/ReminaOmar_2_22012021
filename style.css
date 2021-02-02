@@ -37,37 +37,51 @@ a
 }
 
 /* Header*/
-#logo
+.logo
 {
-    height:20px;
+    position: absolute;
 }
 
-#titre_principal
+header
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
 }
 
+header img
+{
+    height: 50px;
+}
+nav
+{
+    width:100%;
+}
 nav ul
 {
     display: flex;
+    width: 100%;
     justify-content: flex-end;
 }
+
 nav li
 {
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 nav a:hover
 {
-    color:#0065FC;
+    border-top: 2px #0065FC solid;
+    padding-top: 20px;
+    color: #0065FC;
+}
+
+span a:hover
+{
+    color: #0065FC;
     border-top: 2px #0065FC solid;
     padding-top: 20px;
 }
 
-span
+span 
 {
     color: #0065FC;
 }
@@ -120,6 +134,7 @@ button
 #filtres ul
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 ul i
@@ -129,10 +144,8 @@ ul i
 
 #filtres li
 {
-    margin-right: 40px;
-    margin-left: -40px;
-    padding: 15px;
-    padding-left: 55px;
+    margin-left: 40px;
+    padding-right: 15px;
     border: 1px solid #F2F2F2;
     border-left: 0px;
     border-radius: 50px 50px;
@@ -144,45 +157,13 @@ ul i
     color:  #0065FC;
 }
 
-.fa-money-bill-wave
-{
-    
-    padding: 15px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px 50px;
-    
-}
-
-.fa-child
+.icone_filtre
 {
     padding: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
     border: 1px solid #F2F2F2;
     border-radius: 50px 50px;
-    
-}
-
-.fa-heart
-{
-    padding: 15px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px 50px;
-   
-}
-
-.fa-dog
-{
-    padding: 15px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px 50px;
-    
 }
 
 #recherche_info
@@ -368,6 +349,12 @@ aside
     border-radius: 5px 5px 0px 0px;
 }
 
+.petit
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #pomegues
 {
     height: 250px;
@@ -383,7 +370,6 @@ aside
 
 #frioul
 {
-    margin-top: 30px;
     height: 160px;
 }
 
@@ -410,7 +396,7 @@ aside
 
  #longchamp
 {
-    margin-top: 30px;
+    
     height: 230px;
 }
 
@@ -460,4 +446,166 @@ footer ul
 {
     margin-left: 0px;
     padding-left: 0px;
+}
+
+/* Partie Respnsive*/
+@media all and (max-width: 980px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+    /*header*/
+    header 
+    {
+        width: 100%;
+    }
+
+    nav
+    {
+        width: 100%;
+    }
+    
+    #titre_principal
+    {
+        flex-direction: column;
+    }
+
+    nav li 
+    {
+        border-bottom: 3px solid #F2F2F2;   
+    }
+ 
+    nav ul 
+    {
+
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+
+    .navlink
+    {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    li span
+    {
+        border: none;
+    }
+
+    nav a:active
+    {
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    nav a:hover
+    {
+        border-top: 0px;
+    }
+
+    /* Section Recherche*/
+   
+   #filtres
+   {
+       flex-direction: column;
+   }
+
+    #filtres li
+    {
+       padding:0px;
+       margin: 5px;
+    }
+    
+    #filtres ul
+    {
+        justify-content: space-between;
+    }
+
+    #filtres h4
+    {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    /*Carte centrale*/
+    #hotel
+    {
+        flex-direction: column-reverse;
+    }
+
+    #reservation_1
+    {
+        flex-direction: column;
+    }
+
+    #partie_1 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    #partie_2 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    #partie_3 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    .carte_centrale
+    {
+        width: 300px;
+    }
+
+    #booking
+    {
+        background-color: white;
+    }
+
+    /*Carte aside */
+    aside 
+    {
+        width: 320px;
+    }
+    .carte_aside
+    {
+        width: 300px;
+    }
+
+    /*Carte activités*/
+    #activities
+    {
+        flex-direction: column;
+    }
+
+    #activities img
+    {
+        height: 120px;
+        width: 300px;
+    }
+
+    .carte_activites
+    {
+        height: 160px;
+        width: 300px;
+    }
+    
+    /*footer*/
+    footer
+    {
+        flex-direction: column;
+        padding: 30px;
+        width: 320px;
+    }
 }

@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width" />
         <script src="https://kit.fontawesome.com/9c5d3adeda.js" crossorigin="anonymous"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
@@ -13,18 +14,16 @@
         <div id="bloc_page">
             <!-- Header -->
             <header>
-                <div id="titre_principal">
                     <div class="logo">
                     <img src="images/logo/reservia-mini.png" alt="logo"/>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#booking">Hébergements</a></li>
-                            <li><a href="#activites">Activités</a></li>
-                            <li><a href="#"><span>S'inscrire<span></a></li>
+                            <li class="navlink"><a href="#booking">Hébergements</a></li>
+                            <li class="navlink"><a href="#activites">Activités</a></li>
+                            <li><a href="#"><span>S'inscrire<span></a><li>
                         </ul>   
-                    </nav>
-                </div>   
+                    </nav>  
             </header>
             <!-- Banniere de recherche-->
             <section id="recherche">
@@ -39,14 +38,12 @@
                     </div>
                 </form>
                 <div id="filtres">
-                        <div>
-                            <h4>Filtres</h4>
-                        </div>
+                    <h4>Filtres</h4>
                     <ul>
-                        <i class="fas fa-money-bill-wave"></i><li><a href="#">Economique</a></li>
-                        <i class="fas fa-child"></i><li><a href="#">Familial</a></li>
-                        <i class="fas fa-heart"></i><li><a href="#">Romantique</a></li>
-                        <i class="fas fa-dog"></i><li><a href="#">Animaux autorisés</a></li>
+                        <a href="#"><li><i class="fas fa-money-bill-wave icone_filtre"></i>Economique</li></a>
+                        <a href="#" id="famille"><li><i class="fas fa-child icone_filtre"></i>Familial</li></a>
+                        <a href="#"><li><i class="fas fa-heart icone_filtre"></i>Romantique</li></a>
+                        <a href="#"><li><i class="fas fa-dog icone_filtre"></i>Animaux autorisés</li></a>
                     </ul>
                 </div>
                 <div id="recherche_info">    
