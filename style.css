@@ -164,7 +164,7 @@ button
 
 .icone_filtre
 {
-    padding: 20px;
+    padding: 15px;
     margin-right: 15px;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -473,63 +473,50 @@ footer ul
 {
     margin-right: 150px;
 }*/
-/* Partie Respnsive*/
+
+/* Partie Responsive mobile*/
 @media all and (max-width: 980px)
 {
     #bloc_page
     {
         width: auto;
     }
+
     /*header*/
     header 
     {
         width: 100%;
     }
-
-    nav
+   
+    .navlink 
     {
-        width: 100%;
-    }
-    
-    #titre_principal
-    {
-        flex-direction: column;
-    }
-
-    nav li 
-    {
-        border-bottom: 3px solid #F2F2F2;   
+        width: 50%;
+        margin-left: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #F2F2F2;
     }
  
     nav ul 
     {
-
         width: 100%;
         flex-wrap: wrap-reverse;
     }
 
-    .navlink
-    {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    li span
-    {
-        border: none;
-    }
-
-    nav a:active
+    .navlink a:active
     {
         color: #0065FC ;
         border-bottom: 3px solid #0065FC;
-        border-top: 0px;
+        border-top: none;
         padding-bottom: 20px;
     }
 
-    nav a:hover
+    .navlink a:hover
     {
-        border-top: 0px;
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
     }
 
     /* Section Recherche*/
@@ -537,20 +524,18 @@ footer ul
    #filtres
    {
        flex-direction: column;
+       align-items: flex-start;
    }
 
     #filtres li
     {
-       padding:0px;
+       padding: 0px;
        margin: 5px;
-    }
-    
-    #filtres ul
-    {
-        justify-content: space-between;
+       padding-right: 15px;
+      
     }
 
-    #filtres h4
+    #filtres ul
     {
         margin-left: 0px;
         padding-left: 0px;
@@ -602,6 +587,7 @@ footer ul
     aside 
     {
         width: 320px;
+        border-radius: 0px;
     }
     .carte_aside
     {
@@ -609,23 +595,44 @@ footer ul
     }
 
     /*Carte activités*/
-    #activities
+    #activities_bloc
     {
         flex-direction: column;
     }
 
-    #activities img
+    #activities_bloc img
     {
         height: 120px;
         width: 300px;
+        padding:0px;
+        margin: 0px;
     }
 
     .carte_activites
     {
         height: 160px;
         width: 300px;
+        padding: 0px;
     }
-    
+
+    #pomegues
+    {
+        height: 160px;
+        width: 300px;
+    }
+
+    #dame
+    {
+        height: 160px;
+        width: 300px;
+    }
+
+    #longchamp
+    {
+        height: 160px;
+        width: 300px;
+    }
+
     /*footer*/
     footer
     {
