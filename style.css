@@ -475,7 +475,7 @@ footer ul
 }*/
 
 /* Partie Responsive mobile*/
-@media all and (max-width: 980px)
+@media all and (max-width: 414px)
 {
     #bloc_page
     {
@@ -639,5 +639,366 @@ footer ul
         flex-direction: column;
         padding: 30px;
         width: 320px;
+    }
+}
+
+/*Partie responsive paysage*/
+@media all and (max-width: 812px)
+{ 
+  #bloc_page
+    {
+        width: auto;
+    }
+
+    /*header*/
+    header 
+    {
+        width: 100%;
+    }
+   
+    .navlink 
+    {
+        width: 50%;
+        margin-left: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #F2F2F2;
+    }
+ 
+    nav ul 
+    {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+
+    .navlink a:active
+    {
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
+    }
+
+    .navlink a:hover
+    {
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
+    }
+
+    /* Section Recherche*/
+   
+   #filtres
+   {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+    #filtres li
+    {
+       padding: 0px;
+       margin: 5px;
+       padding-right: 15px;
+      
+    }
+
+    #filtres ul
+    {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    /*Carte centrale*/
+    #hotel
+    {
+        flex-direction: column-reverse;
+    }
+
+    #reservation_1
+    {
+        flex-direction: column;
+    }
+
+    #partie_1 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    #partie_2 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    #partie_3 img
+    {
+        object-fit : cover; 
+        height: 100px;
+        width: 300px;
+    }
+
+    .carte_centrale
+    {
+        width: 300px;
+    }
+
+    #booking
+    {
+        background-color: white;
+    }
+
+    /*Carte aside */
+    aside 
+    {
+        width: 320px;
+        border-radius: 0px;
+    }
+    .carte_aside
+    {
+        width: 300px;
+    }
+
+    /*Carte activités*/
+    #activities_bloc
+    {
+        flex-direction: column;
+    }
+
+    #activities_bloc img
+    {
+        height: 120px;
+        width: 300px;
+        padding:0px;
+        margin: 0px;
+    }
+
+    .carte_activites
+    {
+        height: 160px;
+        width: 300px;
+        padding: 0px;
+    }
+
+    #pomegues
+    {
+        height: 160px;
+        width: 300px;
+    }
+
+    #dame
+    {
+        height: 160px;
+        width: 300px;
+    }
+
+    #longchamp
+    {
+        height: 160px;
+        width: 300px;
+    }
+
+    /*footer*/
+    footer
+    {
+        padding: 30px;
+        width: 665px;
+    }
+}
+
+/* Partie Responsive Tablette*/
+@media all and (min-width: 700px) and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    /*header*/
+    header 
+    {
+        width: 100%;
+    }
+   
+    .navlink 
+    {
+        width: 50%;
+        margin-left: 0px;
+        padding-left: 0px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #F2F2F2;
+    }
+ 
+    nav ul 
+    {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+
+    .navlink a:active
+    {
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
+    }
+
+    .navlink a:hover
+    {
+        color: #0065FC ;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 20px;
+    }
+
+    /* Section Recherche*/
+   
+   #filtres
+   {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+    #filtres li
+    {
+       padding: 0px;
+       margin: 15px;
+       padding-right: 15px;
+      
+    }
+
+    #filtres ul
+    {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    /*Carte centrale*/
+    #hotel
+    {
+        flex-direction: column-reverse;
+    }
+
+    #reservation_1
+    {
+        flex-direction: column;
+    }
+
+    #partie_1 img
+    {
+        object-fit : cover; 
+        height: 200px;
+        width: 400px;
+    }
+
+    #partie_2 img
+    {
+        object-fit : cover; 
+        height: 200px;
+        width: 400px;
+    }
+
+    #partie_3 img
+    {
+        object-fit : cover; 
+        height: 200px;
+        width: 400px;
+    }
+
+    .carte_centrale
+    {
+        width: 400px;
+    }
+
+    #reservation_1 p
+    {
+        font-size: 20px;
+    }
+    #booking
+    {
+        background-color: white;
+    }
+
+    /*Carte aside */
+    aside 
+    {
+        width: 450px;
+        border-radius: 0px;
+    }
+
+    .carte_aside
+    {
+        width: 400px;
+    }
+
+    .carte_aside img
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    .carte_aside p
+    {
+        font-size: 20px;
+    }
+    /*Carte activités*/
+    #activities_bloc
+    {
+        flex-direction: column; 
+    }
+
+    #activities_bloc img
+    {
+        height: 200px;
+        width: 400px;
+        padding:0px;
+        margin: 0px;
+    }
+    
+    #activities_bloc p
+    {
+        font-size: 20px;
+    }
+
+    .carte_activites
+    {
+        height: 250px;
+        width: 400px;
+        padding: 0px;
+        margin: 20px;
+    }
+
+    #frioul
+    {
+        right: 5px;
+        height: 250px;
+        width: 400px;
+    }
+    #pomegues
+    {   
+        height: 250px;
+        width: 400px;
+    }
+
+    #dame
+    {
+        height: 250px;
+        width: 400px;
+    }
+
+    #longchamp
+    {
+        height: 250px;
+        width: 400px;
+    }
+
+    /*footer*/
+    footer
+    {
+        padding: 30px;
+        width: 765px;
     }
 }
