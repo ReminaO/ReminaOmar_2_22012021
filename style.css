@@ -2,8 +2,9 @@
 
 #bloc_page
 {
-    width: 1200;
+    max-width: 1200px;
     margin: auto;
+    width: 90%;
 }
 body, html
 {
@@ -15,6 +16,8 @@ body, html
 .gris
 {
     background-color:#F2F2F2;
+    padding: 25px;
+    box-sizing: border-box;
 }
 
 li
@@ -48,7 +51,7 @@ a
 header
 {
     position: relative;
-    margin: 15px;
+    
 }
 
 header img
@@ -80,7 +83,7 @@ nav a
 .navlink a:hover
 {
     border-top: 2px solid #0065FC ;
-    padding: 30px;
+    padding: 15px;
     color: #0065FC;
 }
 
@@ -91,20 +94,13 @@ span
 }
 
 /* Banniere Recherche*/
-#recherche
-{
-    margin: 15px;
-}
 
 #localisation
 {
     display: inline-block;
-    height: 27px;
-    width: 30px;
+    padding: 11px;
     border-radius: 10px 0px 0px 10px;
-    text-align: center;
-    line-height: 30px;
-    padding-top: 10px;
+    background-color: #F2F2F2;
 }
 
 i
@@ -198,57 +194,59 @@ button
 #hotel
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 #hotel p
 {
     margin-left: 20px;
 }
 
-#hotel h2 
-{
-    margin-left: 25px;
-}
 
 #booking img 
 {
     object-fit : cover; 
     height: 90px;
-    width: 190px; 
+    width: 100%; 
 }
 #booking
 {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 5px;
-    margin: 15px;   
+    width:65%;  
 }
 
 #reservation_1
 {
     
     display: flex;
+    justify-content: space-between;
     border-radius: 20px;
-    margin : 10px;
 }
 
 #partie_1
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
 }
 
 #partie_2
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
 }
 
 #partie_3
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
 }
 
 .carte_centrale
@@ -288,9 +286,11 @@ button
 
 aside img
 {
+    float: left;
     object-fit : cover;
-    height: 110px;
-    width: 110px;   
+    height: 120px;
+    width: 35%; 
+    margin: 5px;  
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -298,18 +298,15 @@ aside
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 20px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin : 15px;
+    width: 30%;
 }
 
 .carte_aside
 {
-    display: flex;
     border-radius: 20px 20px 20px 20px;
-    margin: 10px;
-    padding: 5px;
+    width: 100%;
     background-color: white;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);     
 }
@@ -317,6 +314,12 @@ aside
 .carte_aside p
 {
     margin: 0px;
+    padding: 5px;
+}
+
+.aside_nom
+{
+    margin: 0px; 
 }
 
 .nuit
@@ -324,45 +327,27 @@ aside
     font-weight: 100;
 }
 
-.aside_nom
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
-}
 .etoiles_aside
 {
-    margin-left: 20px;
+    
 }
 /*Deuxième section Activités*/
-#activites
-{
-    margin: 40px;
-}
-
 #activities_bloc
 {
     display: flex;
-    justify-content: center;
-}
-
-#activites h2
-{
-    margin-left: -25px;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .long
 {
     height: 440px;
+    width:22%;
 }
 
 .long img
 {
-    object-fit : cover; 
     height:400px;
-    width: 300px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .petit
@@ -370,6 +355,7 @@ aside
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    Width: 22%;
 }
 #pomegues
 {
@@ -378,10 +364,7 @@ aside
 
 #pomegues img
 {
-    object-fit : cover; 
     height: 210px;
-    width: 240px;
-    border-radius: 20px 20px 0px 0px; 
 }
 
 #frioul
@@ -391,10 +374,8 @@ aside
 
  #frioul img
  {
-    object-fit : cover; 
+
     height: 120px;
-    width: 240px;
-    border-radius: 20px 20px 0px 0px;
  }
 
  #dame
@@ -403,12 +384,10 @@ aside
 }
 
  #dame img
- {
-    object-fit : cover; 
+{
     height: 140px;
-    width: 240px;
-    border-radius: 20px 20px 0px 0px;
- }
+    
+}
 
  #longchamp
 {
@@ -418,15 +397,12 @@ aside
 
 #longchamp img
 {
-    object-fit : cover; 
+     
     height: 190px;
-    width: 240px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .carte_activites
 {
-    margin: 15px;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
     border-radius: 20px;    
 }
@@ -437,12 +413,18 @@ aside
     margin: 10px;
 }
 
+.carte_activites img
+{
+    object-fit : cover;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
 
 /* Footer*/
 footer
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     
 }
 
@@ -464,15 +446,14 @@ footer ul
     padding-left: 0px;
 }
 
-/*#about
+.footer_container
 {
-    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    width:90%;
 }
-
-#assistance
-{
-    margin-right: 150px;
-}*/
 
 /* Partie Responsive mobile*/
 @media all and (max-width: 414px)
@@ -556,21 +537,21 @@ footer ul
     {
         object-fit : cover; 
         height: 100px;
-        width: 300px;
+        width: 100%;
     }
 
     #partie_2 img
     {
         object-fit : cover; 
         height: 100px;
-        width: 300px;
+        width: 100%;
     }
 
     #partie_3 img
     {
         object-fit : cover; 
         height: 100px;
-        width: 300px;
+        width: 100%;
     }
 
     .carte_centrale
@@ -586,15 +567,21 @@ footer ul
     /*Carte aside */
     aside 
     {
-        width: 320px;
+        width: 100%;
         border-radius: 0px;
     }
     .carte_aside
     {
-        width: 300px;
+        width: 100%;
+        margin: 5px;
     }
 
     /*Carte activités*/
+    #activites
+    {
+        margin: 35px;
+    }
+
     #activities_bloc
     {
         flex-direction: column;
@@ -603,9 +590,7 @@ footer ul
     #activities_bloc img
     {
         height: 120px;
-        width: 300px;
-        padding:0px;
-        margin: 0px;
+        width: 100%;
     }
 
     .carte_activites
@@ -613,6 +598,7 @@ footer ul
         height: 160px;
         width: 300px;
         padding: 0px;
+        margin-bottom: 15px;
     }
 
     #pomegues
@@ -634,178 +620,10 @@ footer ul
     }
 
     /*footer*/
-    footer
+    .footer_container
     {
         flex-direction: column;
         padding: 30px;
-        width: 320px;
-    }
-}
-
-/*Partie responsive paysage*/
-@media all and (max-width: 812px)
-{ 
-  #bloc_page
-    {
-        width: auto;
-    }
-
-    /*header*/
-    header 
-    {
-        width: 100%;
-    }
-   
-    .navlink 
-    {
-        width: 50%;
-        margin-left: 0px;
-        padding-left: 0px;
-        box-sizing: border-box;
-        border-bottom: 3px solid #F2F2F2;
-    }
- 
-    nav ul 
-    {
-        width: 100%;
-        flex-wrap: wrap-reverse;
-    }
-
-    .navlink a:active
-    {
-        color: #0065FC ;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        padding-bottom: 20px;
-    }
-
-    .navlink a:hover
-    {
-        color: #0065FC ;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-        padding-bottom: 20px;
-    }
-
-    /* Section Recherche*/
-   
-   #filtres
-   {
-       flex-direction: column;
-       align-items: flex-start;
-   }
-
-    #filtres li
-    {
-       padding: 0px;
-       margin: 5px;
-       padding-right: 15px;
-      
-    }
-
-    #filtres ul
-    {
-        margin-left: 0px;
-        padding-left: 0px;
-    }
-
-    /*Carte centrale*/
-    #hotel
-    {
-        flex-direction: column-reverse;
-    }
-
-    #reservation_1
-    {
-        flex-direction: column;
-    }
-
-    #partie_1 img
-    {
-        object-fit : cover; 
-        height: 100px;
-        width: 300px;
-    }
-
-    #partie_2 img
-    {
-        object-fit : cover; 
-        height: 100px;
-        width: 300px;
-    }
-
-    #partie_3 img
-    {
-        object-fit : cover; 
-        height: 100px;
-        width: 300px;
-    }
-
-    .carte_centrale
-    {
-        width: 300px;
-    }
-
-    #booking
-    {
-        background-color: white;
-    }
-
-    /*Carte aside */
-    aside 
-    {
-        width: 320px;
-        border-radius: 0px;
-    }
-    .carte_aside
-    {
-        width: 300px;
-    }
-
-    /*Carte activités*/
-    #activities_bloc
-    {
-        flex-direction: column;
-    }
-
-    #activities_bloc img
-    {
-        height: 120px;
-        width: 300px;
-        padding:0px;
-        margin: 0px;
-    }
-
-    .carte_activites
-    {
-        height: 160px;
-        width: 300px;
-        padding: 0px;
-    }
-
-    #pomegues
-    {
-        height: 160px;
-        width: 300px;
-    }
-
-    #dame
-    {
-        height: 160px;
-        width: 300px;
-    }
-
-    #longchamp
-    {
-        height: 160px;
-        width: 300px;
-    }
-
-    /*footer*/
-    footer
-    {
-        padding: 30px;
-        width: 665px;
     }
 }
 
@@ -891,21 +709,21 @@ footer ul
     {
         object-fit : cover; 
         height: 200px;
-        width: 400px;
+        width: 100%;
     }
 
     #partie_2 img
     {
         object-fit : cover; 
         height: 200px;
-        width: 400px;
+        width: 100%;
     }
 
     #partie_3 img
     {
         object-fit : cover; 
         height: 200px;
-        width: 400px;
+        width: 100%;
     }
 
     .carte_centrale
@@ -932,6 +750,7 @@ footer ul
     .carte_aside
     {
         width: 400px;
+        margin: 10px;
     }
 
     .carte_aside img
@@ -945,6 +764,10 @@ footer ul
         font-size: 20px;
     }
     /*Carte activités*/
+    #activites
+    {
+        margin: 20px;
+    }
     #activities_bloc
     {
         flex-direction: column; 
@@ -973,7 +796,6 @@ footer ul
 
     #frioul
     {
-        right: 5px;
         height: 250px;
         width: 400px;
     }
@@ -996,7 +818,7 @@ footer ul
     }
 
     /*footer*/
-    footer
+    .footer_container
     {
         padding: 30px;
         width: 765px;
